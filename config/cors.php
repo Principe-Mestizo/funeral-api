@@ -17,16 +17,17 @@ return [
 
     'paths' => ['api/*', 'sanctum/csrf-cookie'],
 
-    'allowed_methods' => ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+    'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['https://principe-mestizo.github.io/senati-funeraria/'],
+    'allowed_origins' => ['*'],
 
-    'allowed_headers' => ['Content-Type', 'Authorization'],
+    'allowed_origins_patterns' => [],
+
+    'allowed_headers' => ['*'],
 
     'exposed_headers' => [],
 
-    'max_age' => 3600,
+    'max_age' => 0,
 
     'supports_credentials' => true,
-
 ];
